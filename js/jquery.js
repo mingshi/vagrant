@@ -54,20 +54,20 @@ function offMenu($nCurPos) {
 }
 
 //nav setup @ window scroll
-$(window).scroll(function() {
-	$inview = $('section:in-viewport header').parent().attr('id');
-	if ($('a[hash=#' + $inview + ']') !== null) {
-		$link = $('a[hash=#' + $inview + ']').parent().attr('id').substr(4);
-	}
-
-	if ($link != $nCurrentActive && scrolling == 1) {
-		$nav.removeClass('active');
-		offMenu($nCurrentActive);
-		$nCurrentActive = $link;
-		$('#nav-'+$nCurrentActive).addClass('active');
-		onScrollMenu($nCurrentActive);
-	}
-});
+//$(window).scroll(function() {
+//	$inview = $('section:in-viewport header').parent().attr('id');
+//	if ($('a[hash=#' + $inview + ']') !== null) {
+//		$link = $('a[hash=#' + $inview + ']').parent().attr('id').substr(4);
+//	}
+//
+//	if ($link != $nCurrentActive && scrolling == 1) {
+//		$nav.removeClass('active');
+//		offMenu($nCurrentActive);
+//		$nCurrentActive = $link;
+//		$('#nav-'+$nCurrentActive).addClass('active');
+//		onScrollMenu($nCurrentActive);
+//	}
+//});
 
 
 //window scroll setup
