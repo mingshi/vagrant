@@ -128,10 +128,39 @@
       <header>
         <h2>Install For Windows</h2>
       </header>
-      
-      
-        
+      <ul class="projects list">
+        <li style="font-size:30px;">
+            安装virtualbox
+            <pre><a href="download/windows/VirtualBox-4.1.18-78361-Win.exe">下载VirtualBox</a>，一路next安装</pre> 
+            <br />
+            安装vagrant
+            <pre><a href="download/windows/vagrant_1.0.3.msi">下载Vagrant</a>，一路next安装</pre>
+            <br />
+            安装git
+            <pre><a href="download/windows/git-1.7.11-preview20120704.exe">下载Git</a>，一路next安装</pre>
+            <br />
+            安装putty
+            <pre><a href="download/windows/putty.zip">下载Putty</a>，解压后使用</pre>
+            <br />
+            下载vagrant的box
+            <pre><a href="download/linux/lucid32.box">下载lucid32.box</a></pre>
+            <br />
+            启动vagrant虚拟机
+            <pre>打开Git进入cygwin <br />$ mkdir /c/test<br />$ cd /c/test<br />$ vagrant box add test lucid32.box<br />#lucid32.box的路径要正确<br />$ vagrant init<br />#初始化后在该目录生成配置文件Vagrantfile<br />$ vagrant up<br />#启动Vagrant虚拟机，需要一段较长的时间，请耐心等待</pre>
+            <br />
+            ssh登陆虚拟机
+            <img src="images/putty-keygen.jpg" />
+            <pre>#进入解压后的putty，运行puttygen.exe，点击load选择私钥，点击save private key生成putty版的私钥<br />#默认vagrant的私钥在C:\Documents and Settings\用户名\.vagrant.d\insecure_private_key</pre>
+            <br />
+            <img src="images/putty-host.jpg" />
+            <pre>运行putty.exe配置主机,端口</pre>
+            <br />
+            <img src="images/putty-private.jpg" />
+            <pre>配置私钥后，点击open连接</pre>
+        </li>
+    </ul>
     </section> <!--end section-->
+
     <section id="contact" class="clearfix">
       <header>
         <h2>Some Packages</h2>
