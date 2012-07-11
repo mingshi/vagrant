@@ -59,17 +59,18 @@
       </div>
       <!--end ps_container-->
       <header class="divider intro-text">
+      <div style="font-size:25px;">一次配置 终生受益</div>
         <h2>Vagrant 让这些成为过去 </h2>
       </header>
       <div class="recent-work columns">
         <h3>Why Vagrant</h3>
-        <div class="two-column" style="color:#7D6865;font-weight:bold;font-size:18px;">
+        <div class="two-column" style="color:#7D6865;font-family:黑体;font-size:14px;">
             简化开发环境安装配置过程，开发环境与代码隔离,只需3部，几分钟之内即可完成开发环境的配置。
             <br />
             <br />
             开发者可以尝试和测试开发环境的配置变化，如果他们有需要的话。
         </div>
-        <div class="two-column last" style="color:#7D6865;font-weight:bold;font-size:18px;">
+        <div class="two-column last" style="color:#7D6865;font-family:黑体;font-size:14px;">
             开发者无需担心复杂的基础环境的配置，有的时候甚至是透明的。
         </div>
       </div>
@@ -85,8 +86,8 @@
             border-radius: 4px 4px 4px 4px;
             display: block;
             white-space: pre-wrap;
-            word-wrap: break-word;
-            font-size:20px;
+            font-size:14px;
+            font-family:icourier new;
     </style>
     <header>
         <h2>Install For Linux</h2>
@@ -170,6 +171,14 @@
       <header>
         <h2>Create Box & Use It</h2>
       </header>
+      <ul class="projects list">
+        <li style="font-size:30px;">
+            创建box
+            <pre>$ vagrant package //打包出来的box文件可以重命名为你想要的文件(假设这里为app.box),之后的其他开发者就无需再重建一套开发环境了，直接使用这个box文件即可</pre>
+            使用box
+            <pre>$ vagrant add app app.box<br />$ cd /app/<br />$ vagrant init app<br />$ vagrant up//如此一个开发环境便建立好了,是不是很方便?</pre>
+        </li>
+      </ul>
     </section> <!--end section-->
 
 
@@ -180,12 +189,12 @@
       </header>
       <div style="font-size:30px;">Linux:</div>  
       <ul>
-        <li style="font-size:25px;"><a href="download/linux/git-1.7.7.tar.gz">git-1.7.7</a></li>
-        <li style="font-size:25px;"><a href="download/linux/ruby-1.9.2-p0.tar.gz">ruby-1.9.2-p0</a></li>
-        <li style="font-size:25px;"><a href="download/linux/rubygems-1.8.10.tgz">rubygems-1.8.10</a></li>
-        <li style="font-size:25px;"><a href="download/linux/VirtualBox-4.1-4.1.18_78361_rhel5-1.i386.rpm">VirtualBox-i386</a></li>
-        <li style="font-size:25px;"><a href="download/linux/VirtualBox-4.1-4.1.18_78361_rhel5-1.x86_64.rpm">VirtualBox-x86_64</a></li>
-        <li style="font-size:25px;"><a href="download/linux/lucid32.box">lucid32.box</a></li>
+        <li style="font-size:18px;font-family:icourier new;"><a href="download/linux/git-1.7.7.tar.gz">git-1.7.7</a></li>
+        <li style="font-size:18px;font-family:icourier new;"><a href="download/linux/ruby-1.9.2-p0.tar.gz">ruby-1.9.2-p0</a></li>
+        <li style="font-size:18px;font-family:icourier new;"><a href="download/linux/rubygems-1.8.10.tgz">rubygems-1.8.10</a></li>
+        <li style="font-size:18px;font-family:icourier new;"><a href="download/linux/VirtualBox-4.1-4.1.18_78361_rhel5-1.i386.rpm">VirtualBox-i386</a></li>
+        <li style="font-size:18px;font-family:icourier new;"><a href="download/linux/VirtualBox-4.1-4.1.18_78361_rhel5-1.x86_64.rpm">VirtualBox-x86_64</a></li>
+        <li style="font-size:18px;font-family:icourier new;"><a href="download/linux/lucid32.box">lucid32.box</a></li>
     </ul>
         <br />
        <div style="font-size:30px;">Windows:</div> 
