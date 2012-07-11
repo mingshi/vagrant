@@ -55,7 +55,7 @@
       </div>
       <!--end ps_container-->
       <header class="divider intro-text">
-      <div style="font-size:25px;">一次配置 终生受益</div>
+      <div style="font-size:25px;">Config Once,Run Anywhere!</div>
         <h2>Vagrant 让这些成为过去 </h2>
       </header>
       <div class="recent-work columns">
@@ -193,7 +193,13 @@
         <li style="font-size:18px;font-family:icourier new;"><a href="download/linux/lucid32.box">lucid32.box</a></li>
     </ul>
         <br />
-       <div style="font-size:30px;">Windows:</div> 
+        <div style="font-size:30px;">Windows:</div>
+        <ul>
+            <li style="font-size:18px;font-family:icourier new;"><a href="download/windows/Git-1.7.11-preview20120620.exe">git</a></li> 
+            <li style="font-size:18px;font-family:icourier new;"><a href="download/windows/putty.zip">putty</a></li> 
+            <li style="font-size:18px;font-family:icourier new;"><a href="download/windows/vagrant_1.0.3.msi">vagrant</a></li> 
+            <li style="font-size:18px;font-family:icourier new;"><a href="download/windows/VirtualBox-4.1.18-78361-Win.exe">VirtualBox</a></li> 
+        </ul>
     </section> <!--end section-->
   </div>
 </div>
@@ -243,8 +249,10 @@
 					$links				= $ps_nav.children('li').not($tooltip),
 					total_images		= $links.length,
 					currentHovered		= -1,
-					current				= 0,
-					$loader				= $('#loader');
+                                        current				= 0,
+                                        autoscroll              = 1,
+                                        speed                   = 3000,
+                                        $loader				= $('#loader');
 				
 				/*check if you are using a browser*/	
 				var ie 				= false;
@@ -255,9 +263,9 @@
 					$tooltip.css({
 						opacity	: 0
 					}).show();
-					
-					
-				/*first preload images (thumbs and large images)*/
+
+                                    
+                                /*first preload images (thumbs and large images)*/
 				var loaded	= 0;
 				$links.each(function(i){
 					var $link 	= $(this);
@@ -467,7 +475,26 @@
 			});
 
 			
-		});
+                });
+            var val = 0; 
+            var dir = 'right';
+            function cc(){
+                if(val <= 0){ 
+                    dir = 'right';
+                }
+                if(val >= 2){
+                    dir = 'left';
+                }
+                if(dir == 'right'){
+                    $('.ps_next').trigger('click');
+                    val++;
+                }else{
+                    $('.ps_prev').trigger('click');
+                    val--;
+                }
+            }
+        setInterval(cc,3000);
+
 	</script>
     </body>
 </html>
