@@ -259,7 +259,7 @@ ul.ps_nav li.ps_preview span{
 
 /* ----sections---- */
 
-#home, #work, #about, #contact{
+#home, #linux, #windows, #box, #download{
 	position:relative;
 	margin-bottom:500px;
 	float:left;
@@ -269,7 +269,7 @@ ul.ps_nav li.ps_preview span{
 #top{
 	margin-bottom:0px;
 }
-#work, #about, #contact, .columns, .intro-text{
+#work, #about, #contact, #box, .columns, .intro-text{
 	padding:10px;
 }
 
